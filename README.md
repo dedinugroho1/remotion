@@ -1,3 +1,56 @@
+# Remotion Custom Dev Workspace - by Dedi Nugroho
+
+> **This is a personal fork of [remotion-dev/remotion](https://github.com/remotion-dev/remotion).**
+> Remotion is created and maintained by [Remotion](https://www.remotion.dev) (Jonny Burger and contributors).
+> All credit for the Remotion engine, its packages and its documentation belongs to the upstream project.
+
+## About this fork
+
+This repository is my personal development workspace on top of Remotion. It is used for a **custom personal use-case & contributing bug fixes/improvements back to upstream Remotion**, in line with the "Allowed use cases" clause of the [Remotion License](LICENSE.md).
+
+Goals of this fork:
+
+- **React video architecture research**: studying how Remotion composes, schedules and renders React-based video (core, renderer, Studio, Player).
+- **Testing internal performance and feature fixes**: reproducing issues and validating fixes locally before proposing them upstream.
+- **Short-form video rendering automation experiments**: exploring workflows for programmatically rendering short videos with Remotion's existing APIs.
+
+### What this fork is not
+
+- It is **not** an official Remotion distribution and is not affiliated with or endorsed by Remotion.
+- It is **not** sold, rented, licensed, relicensed or sublicensed, and it is not offered as a standalone product or replacement for Remotion.
+- It does **not** change the license. [LICENSE.md](LICENSE.md) is kept exactly as published upstream and applies to all code in this repository.
+
+If you want to use Remotion, please use the official project:
+
+- Website & docs: [https://www.remotion.dev](https://www.remotion.dev)
+- Source: [https://github.com/remotion-dev/remotion](https://github.com/remotion-dev/remotion)
+- License & pricing: [remotion.dev/license](https://remotion.dev/license)
+
+## Proposed Upstream Contributions / Custom Fixes
+
+Experiments and bug fixes developed in this fork that may be proposed as pull requests to [remotion-dev/remotion](https://github.com/remotion-dev/remotion). Each entry lives on its own branch so it can be submitted upstream independently.
+
+| Topic | Package(s) | Branch | Status | Upstream PR / Issue |
+| ----- | ---------- | ------ | ------ | ------------------- |
+| _No entries yet_ | | | | |
+
+Status legend: `Experiment` → `Ready for PR` → `PR opened` → `Merged upstream` / `Closed`
+
+### Workflow
+
+1. Keep `main` in sync with upstream:
+   ```bash
+   git remote add upstream https://github.com/remotion-dev/remotion.git  # once
+   git fetch upstream && git merge upstream/main
+   ```
+2. Create a topic branch per fix/experiment and add a row to the table above.
+3. Build and test with the monorepo tooling (`bun install`, `bunx turbo run make`, `bunx turbo run lint test`).
+4. Follow the upstream [CONTRIBUTING.md](CONTRIBUTING.md) and the [contribution guide](https://remotion.dev/docs/contributing) before opening a PR against `remotion-dev/remotion`.
+
+---
+
+_The original upstream Remotion README follows below, unchanged._
+
 <p align="center">
   <a href="https://github.com/remotion-dev/logo">
     <picture>
